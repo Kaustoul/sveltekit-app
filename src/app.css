@@ -1,0 +1,30 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.tooltip {
+	@apply text-left;
+}
+
+.tooltip:before {
+	transform: none;
+	@apply left-0;
+}
+
+.tooltip:after {
+	transform: none;
+	@apply left-5;
+}
